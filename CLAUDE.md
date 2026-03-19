@@ -24,4 +24,11 @@ State is held in three module-level variables: `board`, `current` (whose turn), 
 
 ## Git workflow
 
-Commit after every meaningful change and push to `https://github.com/Cgoode44/tic-tac-toe`. Keep commit messages descriptive (what changed and why, not just "update file").
+After every meaningful unit of work — a new feature, a bug fix, a refactor — commit and push immediately to `https://github.com/Cgoode44/tic-tac-toe`. Do not batch multiple changes into one commit. The goal is that no work is ever lost and the repo always reflects the latest state.
+
+Commit message rules:
+- Subject line: short imperative phrase describing *what* changed (e.g. `Add AI opponent with easy difficulty`)
+- Body (when needed): one or two lines explaining *why*, not just *what*
+- Always append `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>`
+
+Never finish a session without pushing. If a task spans multiple steps, commit at each stable checkpoint rather than waiting until everything is done.
